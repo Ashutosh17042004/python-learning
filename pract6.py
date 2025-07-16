@@ -76,7 +76,7 @@
 
 
 # print table in reverse order using for loop
-n=int(input("enter no. : "))
-for i in range(10,0,-1):
-    print(f"{n} X {i} = {n*i}")
+# n=int(input("enter no. : "))
+# for i in range(10,0,-1):
+#     print(f"{n} X {i} = {n*i}")
    
