@@ -20,3 +20,15 @@
 
 #     return n + sum(n-1)
 # print(sum(4))
+
+# '''ques 3 print this pattern
+#     ***
+#     **
+#     * for n=3
+# '''
+# def pattern(n):
+#     for i in range(n,0,-1):
+#         print("*"*i,end="")
+#         print("")
+
+# pattern(3)
