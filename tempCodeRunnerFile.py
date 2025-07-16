@@ -1,5 +1,2 @@
- # while(i>1 and i<n):
-    #     print("*",end="")
-    #     print(" "*(n-2),end="")
-    #     print("*",end="")
-    #     i+=1
+if  n==1 or n==0:
+    #     return 1
