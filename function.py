@@ -18,8 +18,18 @@
 
 
 # default argument in functions
-def func3(name, ending="Thank you"):
-    print(f"good day {name} , {ending}")
-func3("ashu") #Without giving second argumrnt which is by default in function already
+# def func3(name, ending="Thank you"):
+#     print(f"good day {name} , {ending}")
+# func3("ashu") #Without giving second argumrnt which is by default in function already
 
-func3("ashu","how are you") #giving second argumrnt which is by default in function already
+# func3("ashu","how are you") #giving second argumrnt which is by default in function already
+
+
+# RECURSION (method by WHICH FUNCTION CALL ITSELF)
+# def factorial (n):
+#     if (n==1 or n==0):
+#         return 1
+#     return n* factorial(n-1) #function call itself
+
+# n= int(input("enetr no. : "))
+# print(f"Factorial of {n} is : {factorial(n)}")
