@@ -33,3 +33,56 @@
 
 # n= int(input("enetr no. : "))
 # print(f"Factorial of {n} is : {factorial(n)}")
+
+
+# kwargs (keyword argument)
+
+# def display_info(**kwargs):
+#     print(kwargs)
+#     print(type(kwargs))
+
+#     for  key,value in kwargs.items():
+#         print(key , "=>" , value)
+
+# display_info(name="ashu", age =18)
+# # kwargs should always be the last parameter
+# def func(a,b,*agrs,**kwargs):  
+#     print(a)
+#     print(b)
+#     print(agrs)
+#     print(kwargs)
+# func(5,6,7,8,9,name="ashu",age =18,city="jhansi")
+
+# def outer():
+#     print("Hello from the outer")
+#     def inner():
+#         print("Hello from the inner")
+
+#     return inner
+# fn=outer()
+# fn()
+
+# my_list=[1,2,3,4]
+
+# def modify_list(li):
+#     li.append(5)
+#     print(li)
+# print(f"before modify {my_list}")
+# modify_list(my_list)
+# print(f"after modify {my_list}")
+
+
+
+# LAMBDA FUNCTION
+func=lambda x: x+10 #only take one expression function
+
+print(func(5))
+
+add=lambda a,b :print(a+b) 
+add(3,4)
+
+def myFunc():
+    #return new function
+    return lambda msg:print(msg)
+
+myFunc()("hello ashu")
