@@ -14,12 +14,12 @@
 # print(f"greatestnumber = {greatest(a,b,c)}")
 
 # ques2 write recursive function to add first n natural no.
-# def sum(n):
-#     if  n==1 :
-#         return 1
+def sum(n):
+    if  n==1 :
+        return 1
 
-#     return n + sum(n-1)
-# print(sum(4))
+    return n + sum(n-1)
+print(sum(20))
 
 # '''ques 3 print this pattern
 #     ***

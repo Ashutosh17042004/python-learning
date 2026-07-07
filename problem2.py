@@ -1,7 +1,7 @@
 import os
 
 # Specify the directory path (you can change this to any path)
-directory_path = '/'  # current directory
+directory_path = "./Sumit frontend"  # current directory
 
 # Check if the path exists and is a directory
 if os.path.exists(directory_path) and os.path.isdir(directory_path):

@@ -6,7 +6,7 @@
 # print("GOOD AFTERNOON ",str.upper())
 # print(f"GOOD AFTERNOON {str.upper()}")
 
-#ques 3 fill letter templates
+# ques 3 fill letter templates
 # name=input("enter name : ")
 # date=input(" enter date : ")
 # letter= f'''
@@ -16,10 +16,13 @@
 # '''
 # print(letter)
 
-#detect double space in string
+# detect double space in string
 # string=input("enter string : ")
 # print(string.find("  "))
 
-#replace in string
-string="hello  ashu  how"
-print(string.replace("  "," "))
+# replace in string
+string = "hello  ashu  how"
+print(string.replace("  ", " "))
+
+a = int("enter spaces : ")
+print("ashu", " " * a, "ashu")
