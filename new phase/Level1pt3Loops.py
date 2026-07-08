@@ -145,3 +145,51 @@
 #     digits_sum += digit
 #     number //= 10
 # print(f"Original no. is {original_number}\nSum of digits {digits_sum}")
+
+
+# Q29
+
+# Check whether a number is palindrome.
+
+# Example
+
+# 121
+
+# Palindrome
+
+# original_number = int(input("Enter num : "))
+# number = original_number
+# reverse = 0
+
+# while number > 0:
+#     digit = number % 10
+#     reverse = reverse * 10 + digit
+#     number //= 10
+# print(
+#     f"The number {original_number} is a palindrome number"
+#     if original_number == reverse
+#     else f"The number {original_number} is NOT a palindrome number"
+# )
+
+
+# write as resuable function
+def is_palindrome_number(original_number):
+
+    number = original_number
+    if number < 0:
+        return False
+
+    reverse = 0
+
+    while number > 0:
+        digit = number % 10
+        reverse = reverse * 10 + digit
+        number //= 10
+    return reverse == original_number
+
+
+if is_palindrome_number(124):
+    print("Its a palindrome number")
+else:
+
+    print("Its not a palindrome number")
