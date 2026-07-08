@@ -70,3 +70,57 @@
 # for i in range(N, 0, -1):
 #     fact *= i
 # print(f"Factorial of number {N} is : {fact}")
+
+
+# Q26
+
+# Count how many digits are present.
+
+# Example
+
+# Input
+
+# 123456
+
+# Output
+
+# 6
+
+# N = int(input("Enter nth no. : "))
+# count = 0
+
+# while N > 0:
+#     N = int(N / 10)
+#     count += 1
+# print(count)
+
+
+# Q27
+
+# Reverse a number.
+
+# Example
+
+# 1234
+
+# 4321
+
+# This is my code (how i think )
+digits = int(input("Enter nth no. : "))
+reverse = 0
+while digits > 0:
+    n = digits
+    count = 0
+    while n > 0:
+        n = int(n / 10)
+        count += 1
+    reverse += (digits % 10) * (10 ** (count - 1))
+    digits //= 10
+print(reverse)
+
+# what the other good ans(chatgpt)
+while digits > 0:
+    digit = digit % 4
+    reverse = reverse * 10 + digit
+    digits //= 10
+print(reverse)
