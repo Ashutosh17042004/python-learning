@@ -173,23 +173,59 @@
 
 
 # write as resuable function
-def is_palindrome_number(original_number):
+# def is_palindrome_number(original_number):
 
-    number = original_number
-    if number < 0:
-        return False
+#     number = original_number
+#     if number < 0:
+#         return False
 
-    reverse = 0
+#     reverse = 0
 
-    while number > 0:
-        digit = number % 10
-        reverse = reverse * 10 + digit
-        number //= 10
-    return reverse == original_number
+#     while number > 0:
+#         digit = number % 10
+#         reverse = reverse * 10 + digit
+#         number //= 10
+#     return reverse == original_number
 
 
-if is_palindrome_number(124):
-    print("Its a palindrome number")
-else:
+# if is_palindrome_number(124):
+#     print("Its a palindrome number")
+# else:
 
-    print("Its not a palindrome number")
+#     print("Its not a palindrome number")
+
+
+# Q30
+
+# Print all factors of a number.
+
+# Example
+
+# 12
+
+# 1
+
+# 2
+
+# 3
+
+# 4
+
+# 6
+
+# 12
+
+
+original_number = int(input("enter number : "))
+for i in range(1, original_number + 1):
+    if original_number % i == 0:
+        print(i)
+
+
+def factors_of_number(number):
+    for i in range(1, number + 1):
+        if number % i == 0:
+            print(i)
+
+
+factors_of_number(original_number)
