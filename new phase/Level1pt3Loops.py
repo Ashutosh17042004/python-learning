@@ -106,21 +106,42 @@
 # 4321
 
 # This is my code (how i think )
-digits = int(input("Enter nth no. : "))
-reverse = 0
-while digits > 0:
-    n = digits
-    count = 0
-    while n > 0:
-        n = int(n / 10)
-        count += 1
-    reverse += (digits % 10) * (10 ** (count - 1))
-    digits //= 10
-print(reverse)
+# digits = int(input("Enter nth no. : "))
+# reverse = 0
+# while digits > 0:
+#     n = digits
+#     count = 0
+#     while n > 0:
+#         n = int(n / 10)
+#         count += 1
+#     reverse += (digits % 10) * (10 ** (count - 1))
+#     digits //= 10
+# print(reverse)
 
-# what the other good ans(chatgpt)
-while digits > 0:
-    digit = digit % 4
-    reverse = reverse * 10 + digit
-    digits //= 10
-print(reverse)
+# # what the other good ans(chatgpt)
+# while digits > 0:
+#     digit = digit % 4
+#     reverse = reverse * 10 + digit
+#     digits //= 10
+# print(reverse)
+
+
+# Q28
+
+# Find sum of digits.
+
+# Example
+
+# 123
+
+# 6
+
+# original_number = int(input("Enter num : "))
+# number = (original_number) * (-1) if original_number < 0 else original_number
+# digits_sum = 0
+
+# while number > 0:
+#     digit = number % 10
+#     digits_sum += digit
+#     number //= 10
+# print(f"Original no. is {original_number}\nSum of digits {digits_sum}")
