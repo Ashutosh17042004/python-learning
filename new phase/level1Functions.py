@@ -8,46 +8,46 @@
 # Smallest
 # Average
 
-num1, num2, num3, num4, num5 = (
-    int(input("Enter num1 :")),
-    int(input("Enter num2 :")),
-    int(input("Enter num3 :")),
-    int(input("Enter num4 :")),
-    int(input("Enter num5 :")),
-)
+# num1, num2, num3, num4, num5 = (
+#     int(input("Enter num1 :")),
+#     int(input("Enter num2 :")),
+#     int(input("Enter num3 :")),
+#     int(input("Enter num4 :")),
+#     int(input("Enter num5 :")),
+# )
 
 
-def func(num1, num2, num3, num4, num5):
-    largest = num1
-    if num2 > largest:
-        largest = num2
-    if num3 > largest:
-        largest = num3
-    if num4 > largest:
-        largest = num4
-    if num5 > largest:
-        largest = num5
+# def func(num1, num2, num3, num4, num5):
+#     largest = num1
+#     if num2 > largest:
+#         largest = num2
+#     if num3 > largest:
+#         largest = num3
+#     if num4 > largest:
+#         largest = num4
+#     if num5 > largest:
+#         largest = num5
 
-    print(f"{largest} is the largest no.")
+#     print(f"{largest} is the largest no.")
 
-    smallest = num1
-    if num2 < smallest:
-        smallest = num2
-    if num3 < smallest:
-        smallest = num3
-    if num4 < smallest:
-        smallest = num4
-    if num5 < smallest:
-        smallest = num5
+#     smallest = num1
+#     if num2 < smallest:
+#         smallest = num2
+#     if num3 < smallest:
+#         smallest = num3
+#     if num4 < smallest:
+#         smallest = num4
+#     if num5 < smallest:
+#         smallest = num5
 
-    print(f"{smallest} is the smallest no.")
+#     print(f"{smallest} is the smallest no.")
 
-    average = (num1 + num2 + num3 + num4 + num5) / 5
+#     average = (num1 + num2 + num3 + num4 + num5) / 5
 
-    print(f"{average} is the average of the no.")
+#     print(f"{average} is the average of the no.")
 
 
-func(num1, num2, num3, num4, num5)
+# func(num1, num2, num3, num4, num5)
 
 
 # Q42
@@ -65,28 +65,28 @@ func(num1, num2, num3, num4, num5)
 # /
 
 
-def calculator(num1, num2, operator):
-    match operator:
-        case "+":
-            return f"Sum of no. {num1}, {num2} is : {num1+num2}"
-        case "-":
-            return f"Substraction of no. {num1}, {num2} is : {num1-num2}"
-        case "*":
-            return f"Multiplication of no. {num1}, {num2} is : {num1*num2}"
-        case "/":
-            if num2 == 0:
-                print("Cannot divide by zero")
-            return f"Division of no. {num1}, {num2} is : {num1/num2}"
-        case _:
-            return "Invalid operator !!!"
+# def calculator(num1, num2, operator):
+#     match operator:
+#         case "+":
+#             return f"Sum of no. {num1}, {num2} is : {num1+num2}"
+#         case "-":
+#             return f"Substraction of no. {num1}, {num2} is : {num1-num2}"
+#         case "*":
+#             return f"Multiplication of no. {num1}, {num2} is : {num1*num2}"
+#         case "/":
+#             if num2 == 0:
+#                 print("Cannot divide by zero")
+#             return f"Division of no. {num1}, {num2} is : {num1/num2}"
+#         case _:
+#             return "Invalid operator !!!"
 
 
-num1, num2, operator = (
-    int(input("enter first no.")),
-    int(input("enter second no.")),
-    (input("enter operator(+,-,/,*) : ")),
-)
-print(calculator(num1, num2, operator))
+# num1, num2, operator = (
+#     int(input("enter first no.")),
+#     int(input("enter second no.")),
+#     (input("enter operator(+,-,/,*) : ")),
+# )
+# print(calculator(num1, num2, operator))
 
 
 # Q43
@@ -105,17 +105,39 @@ print(calculator(num1, num2, operator))
 
 # Insufficient Balance
 
-balance = 10000
+# balance = 10000
 
 
-def withdraw(balance, amount):
-    if amount <= 0:
-        return f"Invalid amount"
-    if amount <= balance:
-        return f"Withdraw successful of amount {amount}\ncurrent Balance : {balance-amount}"
-    else:
-        return "Insufficient balance"
+# def withdraw(balance, amount):
+#     if amount <= 0:
+#         return f"Invalid amount"
+#     if amount <= balance:
+#         return f"Withdraw successful of amount {amount}\ncurrent Balance : {balance-amount}"
+#     else:
+#         return "Insufficient balance"
 
 
-amount = int(input("Enter amount to withdraw : "))
-print(withdraw(balance, amount))
+# amount = int(input("Enter amount to withdraw : "))
+# print(withdraw(balance, amount))
+
+
+# Q44
+
+# Guess Number Game
+
+# Computer number
+
+# 7
+
+
+# Keep asking until user guesses correctly.
+def guessno():
+    randomnum = 7
+    num = int(input("Enter no. : "))
+    while num != randomnum:
+        print("try again!!")
+        num = int(input("Enter no. : "))
+    return print("YOU WIN!!!!")
+
+
+guessno()
