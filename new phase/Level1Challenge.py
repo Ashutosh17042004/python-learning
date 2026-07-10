@@ -29,4 +29,73 @@ def login(trail):
 
 
 trail = 3
-login(trail)
+# login(trail)
+
+# workflow given by chatgpt :-
+# Start
+
+# ↓
+
+# attempts = 3
+
+# ↓
+
+# while attempts > 0
+
+# ↓
+
+# Take username/password
+
+# ↓
+
+# Correct?
+
+# ↓
+
+# Yes
+
+# ↓
+
+# Login Success
+
+# ↓
+
+# Break
+
+# ↓
+
+# No
+
+# ↓
+
+# attempts -= 1
+
+# ↓
+
+# Print attempts left
+
+# ↓
+
+# Loop again
+
+# ↓
+
+# No attempts?
+
+# ↓
+
+# Account Locked
+
+
+attempts = 3
+while attempts > 0:
+    username = input("Enter username : ")
+    password = int(input("Enter password : "))
+    if username == username_in_db and password == password_in_db:
+        print("login sucessfully !!!")
+        break
+    else:
+        attempts -= 1
+        print(f"Attempt left {attempts}\nTry Again...")
+    if attempts == 0:
+        print("Account locked")
