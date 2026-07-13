@@ -36,7 +36,7 @@ while True:
 3. Search Contact
 4. Sort Contact
 5. Show Contacts
-5. Exit
+6. Exit
 =========================  :  """))
 
     match selected_option:
