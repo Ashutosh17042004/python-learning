@@ -28,5 +28,7 @@ for marks in marks_list:
         lowest_marks = marks
     if highest_marks <= marks:
         highest_marks = marks
+marks_list.sort()
+print("sorted marks list ", marks_list)
 print(f"lowest marks : {lowest_marks}")
 print(f"Highest marks : {highest_marks}")
