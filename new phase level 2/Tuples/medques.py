@@ -66,3 +66,27 @@ Difference in Y :{abs(y1-y2)}
 """)
 
 
+"""Q6 🟡 Swap Records
+
+Store
+
+student1 = ("Ashu", 21)
+
+student2 = ("Rahul", 22)
+
+Swap both students using tuple unpacking only.
+
+Do not use a third variable."""
+
+
+student1 = ("Ashu", 21)
+student2 = ("Rahul", 22)
+print("Before swap")
+print(student1)
+print(student2)
+
+student1, student2 = student2, student1
+
+print("After swap")
+print(student1)
+print(student2)
