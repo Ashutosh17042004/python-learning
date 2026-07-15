@@ -27,17 +27,19 @@ Loop"""
 
 products = (("Laptop", 10), ("Mouse", 50), ("Keyboard", 25), ("Monitor", 15))
 total_stock = 0
-product_name = []
+total_product = 0
+print("Product Name : Stock")
+print("====================")
+
 for product in products:
+
     name, stock = product
-    product_name.append(name)
+    print(f"   {name} : {stock}")
     total_stock += stock
+    total_product += 1
 
-total_product = len(products)
+
 print(f"""
-Product Name : {product_name}
-
 Total Products : {total_product}
-
 Total Stock : {total_stock}
 """)
