@@ -1,11 +1,7 @@
-for index, i in enumerate(marks, start=0):
+print("""
+# ========== Student Report ==========
+# Roll No    Name      Marks
+# -----------------------------------""")
 
-#     if highest < i:
-#         highest = i
-
-#     if lowest > i:
-#         lowest = i
-#     if i == 90:
-#         count_90 += 1
-#     if i == 75:
-#         index_75.append(index)
+# for student in students:
+#     print(f"")
