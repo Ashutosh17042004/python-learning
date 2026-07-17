@@ -24,7 +24,7 @@ totaluppercase = 0
 Lowercase_Letters = []
 totallowercase = 0
 Digits = []
-total_Digits=0
+total_Digits = 0
 Spaces = 0
 Special_Characters = []
 
@@ -38,7 +38,7 @@ for ch in para:
         totallowercase += 1
     elif ch == " ":
         Spaces += 1
-    elif ord(ch) in range(ord("0"), ord("9")):
+    elif ord(ch) in range(ord("0"), ord("9") + 1):
         Digits.append(ch)
         total_Digits += 1
     else:
