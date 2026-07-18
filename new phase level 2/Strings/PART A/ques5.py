@@ -18,22 +18,41 @@ Traverse once
 Don't use dictionaries yet
 Don't use count()"""
 
-string = "aaabbccccdd"
+# string = "aaabbccccdd"
 
-perv_char = ""
-count = 0
+# previous_character = ""
+# count = 0
 
-for index, ch in enumerate(string):
-    if index == 0:
-        perv_char += ch
+# for index, ch in enumerate(string):
+#     if index == 0:
+#         previous_character = ch
+#         count += 1
+#     elif ch == previous_character:
+#         count += 1
+#         previous_character = ch
+#         if index == len(string) - 1:
+#             print(previous_character, count)
+
+#     elif ch != previous_character:
+#         print(previous_character, count)
+#         count = 1
+#         previous_character = ch
+
+
+string = "aaabbccccd"
+
+previous_character = string[0]
+count = 1
+
+for ch in string[1:]:
+
+    if ch == previous_character:
         count += 1
-    elif ch == perv_char:
-        count += 1
-        perv_char = ch
-        if index == len(string) - 1:
-            print(perv_char, count)
 
-    elif ch != perv_char:
-        print(perv_char, count)
+    else:
+        print(previous_character, count)
+        previous_character = ch
         count = 1
-        perv_char = ch
+
+# Print the last group
+print(previous_character, count)

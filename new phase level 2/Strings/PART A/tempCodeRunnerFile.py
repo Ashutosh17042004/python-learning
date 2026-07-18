@@ -1,6 +1,3 @@
- # elif previous_space == True:
-    #     newstring = ch.upper() + string[1:]
-    # elif ch == " ":
-    #     previous_space = True
-    # else:
-    #     previous_space = False
+     print(previous_character, count)
+            count = 1
+            previous_character = ch
