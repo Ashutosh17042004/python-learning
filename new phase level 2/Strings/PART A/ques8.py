@@ -1,42 +1,32 @@
-"""Q8 ⭐⭐⭐⭐⭐ (Character Frequency Counter)
-
-Input
-
-programming
+"""
+Q8 ⭐⭐⭐⭐⭐ (Character Frequency Counter)
 
 Without using:
 ❌ count()
 ❌ dictionary
 ❌ set()
-❌ collections.Counter
+❌ list
+"""
 
-Print
+string = "programming"
 
-p -> 1
-r -> 2
-o -> 1
-g -> 2
-a -> 1
-m -> 2
-i -> 1
-n -> 1
+for i in range(len(string)):
 
-Rules
+    # Check if this character has already appeared before
+    already_processed = False
 
-✅ Traverse the string manually.
-✅ Do not use count().
-✅ Do not use dictionary.
-✅ Do not use set().
-✅ Do not use list.
-✅ Each character should be printed only once.
-✅ Preserve the order of first appearance.
+    for j in range(i):
+        if string[i] == string[j]:
+            already_processed = True
+            break
 
-Hint (Think, don't copy)
+    if already_processed:
+        continue
 
-- Traverse the string from left to right.
-- Before counting a character, check whether you've already processed it.
-- If it has already been processed, skip it.
-- Otherwise, traverse the remaining string to count its occurrences.
-- Print the character and its frequency."""
+    # Count occurrences
+    count = 0
+    for ch in string:
+        if ch == string[i]:
+            count += 1
 
-input_string = "programing"
+    print(f"{string[i]} -> {count}")
