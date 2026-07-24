@@ -1,1 +1,1 @@
-programming
+previous_palindromic_string
