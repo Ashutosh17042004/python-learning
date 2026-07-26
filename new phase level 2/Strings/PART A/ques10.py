@@ -34,34 +34,34 @@ previous_palindromic_string = ""
 # print(previous_palindromic_string)
 
 
-for i in range(len(string)):
-    if i == 0:
-        continue
-    tempstring = ""
-    for j in range(i - 1, -1, -1):
-        tempstring += string[j]
-
-    if string[:i] == tempstring:
-        if len(previous_palindromic_string) < len(tempstring):
-            previous_palindromic_string = tempstring
-
-print(previous_palindromic_string)
-
-
 # for i in range(len(string)):
 #     if i == 0:
 #         continue
-
-#     set_string = False
+#     tempstring = ""
 #     for j in range(i - 1, -1, -1):
-#         if i == j:
-#             break
-#         else:
-#             if string[i] == string[j]:
-#                 set_string = True
+#         tempstring += string[j]
 
-#     if set_string:
-#         if len(previous_palindromic_string) < len(string[:i]):
-#             previous_palindromic_string = string[:i]
+#     if string[:i] == tempstring:
+#         if len(previous_palindromic_string) < len(tempstring):
+#             previous_palindromic_string = tempstring
 
 # print(previous_palindromic_string)
+
+
+for i in range(len(string)):
+    if i == 0:
+        continue
+
+    set_string = False
+    for j in range(i - 1, -1, -1):
+        if i == j:
+            break
+        else:
+            if string[i] == string[j]:
+                set_string = True
+
+    if set_string:
+        if len(previous_palindromic_string) < len(string[:i]):
+            previous_palindromic_string = string[:i]
+
+print(previous_palindromic_string)
