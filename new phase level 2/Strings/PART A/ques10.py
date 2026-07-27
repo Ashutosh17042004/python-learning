@@ -22,16 +22,16 @@ string = "levelheaded"
 previous_palindromic_string = ""
 
 
-# print(string[: abs((len(string)) / 2)])
-# for i in range(len(string)):
-#     if i == 0:
+print(string[: abs((len(string)) / 2)])
+for i in range(len(string)):
+    if i == 0:
 
-#         continue
-#     if string[0:i] == string[i - 1 :: -1]:
-#         if len(previous_palindromic_string) < len(string[0:i]):
-#             previous_palindromic_string = string[0:i]
+        continue
+    if string[0:i] == string[i - 1 :: -1]:
+        if len(previous_palindromic_string) < len(string[0:i]):
+            previous_palindromic_string = string[0:i]
 
-# print(previous_palindromic_string)
+print(previous_palindromic_string)
 
 
 # for i in range(len(string)):
@@ -48,20 +48,20 @@ previous_palindromic_string = ""
 # print(previous_palindromic_string)
 
 
-for i in range(len(string)):
-    if i == 0:
-        continue
+# for i in range(len(string)):
+#     if i == 0:
+#         continue
 
-    set_string = False
-    for j in range(i - 1, -1, -1):
-        if i == j:
-            break
-        else:
-            if string[i] == string[j]:
-                set_string = True
+#     set_string = False
+#     for j in range(i - 1, -1, -1):
+#         if i == j:
+#             break
+#         else:
+#             if string[i] == string[j]:
+#                 set_string = True
 
-    if set_string:
-        if len(previous_palindromic_string) < len(string[:i]):
-            previous_palindromic_string = string[:i]
+#     if set_string:
+#         if len(previous_palindromic_string) < len(string[:i]):
+#             previous_palindromic_string = string[:i]
 
-print(previous_palindromic_string)
+# print(previous_palindromic_string)
