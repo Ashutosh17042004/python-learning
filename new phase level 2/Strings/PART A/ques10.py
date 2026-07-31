@@ -23,29 +23,29 @@ previous_palindromic_string = ""
 
 
 print(string[: abs((len(string)) / 2)])
-for i in range(len(string)):
-    if i == 0:
+# for i in range(len(string)):
+#     if i == 0:
 
-        continue
-    if string[0:i] == string[i - 1 :: -1]:
-        if len(previous_palindromic_string) < len(string[0:i]):
-            previous_palindromic_string = string[0:i]
+#         continue
+#     if string[0:i] == string[i - 1 :: -1]:
+#         if len(previous_palindromic_string) < len(string[0:i]):
+#             previous_palindromic_string = string[0:i]
 
-print(previous_palindromic_string)
+# print(previous_palindromic_string)
 
 
-for i in range(len(string)):
-    if i == 0:
-        continue
-    tempstring = ""
-    for j in range(i - 1, -1, -1):
-        tempstring += string[j]
+# for i in range(len(string)):
+#     if i == 0:
+#         continue
+#     tempstring = ""
+#     for j in range(i - 1, -1, -1):
+#         tempstring += string[j]
 
-    if string[:i] == tempstring:
-        if len(previous_palindromic_string) < len(tempstring):
-            previous_palindromic_string = tempstring
+#     if string[:i] == tempstring:
+#         if len(previous_palindromic_string) < len(tempstring):
+#             previous_palindromic_string = tempstring
 
-print(previous_palindromic_string)
+# print(previous_palindromic_string)
 
 
 for i in range(len(string)):
