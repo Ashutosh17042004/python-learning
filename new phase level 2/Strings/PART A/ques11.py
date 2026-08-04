@@ -48,7 +48,7 @@ for i in range(len(string)):
     if len(current_substring) > len(longest_substring):
         longest_substring = current_substring
 
-print(f"""
-Longest Unique Substring : {longest_substring}
-Length : {len(longest_substring)}
-""")
+# print(f"""
+# Longest Unique Substring : {longest_substring}
+# Length : {len(longest_substring)}
+# """)
