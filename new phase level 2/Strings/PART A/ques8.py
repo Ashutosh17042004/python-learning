@@ -26,24 +26,24 @@ for ch in list:
         print(f"{ch} -> {count}")
 
 
-# for i in range(len(string)):
+for i in range(len(string)):
 
-#     # Check if this character has already appeared before
-#     already_processed = False
+    # Check if this character has already appeared before
+    already_processed = False
 
-#     for j in range(i):
-#         if string[i] == string[j]:
-#             already_processed = True
-#             break
+    for j in range(i):
+        if string[i] == string[j]:
+            already_processed = True
+            break
 
-#     if already_processed:
-#         continue
+    if already_processed:
+        continue
 
 
-#     # Count occurrences
-#     count = 0
-#     for ch in string:
-#         if ch == string[i]:
-#             count += 1
+    # Count occurrences
+    count = 0
+    for ch in string:
+        if ch == string[i]:
+            count += 1
 
-#     print(f"{string[i]} -> {count}")
+    print(f"{string[i]} -> {count}")
