@@ -37,20 +37,6 @@
 # ✅ Build the compressed string yourself.
 # ✅ If a character appears only once, don't print 1.
 
-# Example
-
-# Input:
-# aaabbccccdd
-
-# Output:
-# a3b2c4d2
-
-# Input:
-# abcc
-
-# Output:
-# abc2
-
 
 
 string = "aaabbccccdd"
